@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StructureMap MementoStyle="Attribute">
+  <AddInstance
+    PluginType="AdoDAL.IAdoDAL, AdoDAL"
+    PluggedType="AdoDALSQL.AdoDALSQL, AdoDAL"
+    Key="MSSQL" Name="MSSQL" MyProperty="1" />
+  <AddInstance
+    PluginType="AdoDAL.IAdoDAL, AdoDAL"
+    PluggedType="AdoDALOracle.AdoDALORACLE, AdoDAL"
+    Key="ORACLE" Name="ORACLE" MyProperty="2" /> 
+</StructureMap>
